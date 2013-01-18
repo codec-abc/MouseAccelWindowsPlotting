@@ -10,7 +10,9 @@ function test(e)
 
 function test2()
 {
-    if (this.series.data.length > 1) this.remove();
+  //  if (this.series.data.length > 1) this.remove();
+    this.x=0.5;
+    this.y=0.5;
 }  
 
 $(function () {
