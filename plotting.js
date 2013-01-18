@@ -11,7 +11,7 @@ function onChartLoad(event)
 function onPointSelected()
 {
   //  movePoint(this);
-  setInterval(movePoint(e),40);
+  setInterval(movePoint(this),40);
 }
 
 function movePoint(e)
