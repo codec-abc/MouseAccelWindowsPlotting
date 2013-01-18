@@ -30,7 +30,7 @@ $(function () {
                 margin: [70, 50, 60, 80],
                 events: {
                 	    click:onChartClick,
-                        load: onChartLoad(event)
+                        load: onChartLoad
                 }
             },
             title: {
