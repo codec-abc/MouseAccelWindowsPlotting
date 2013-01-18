@@ -12,7 +12,7 @@ function test2()
 {
     this.x=0.2;
     this.y=0.2;
-    this.series.chart.setTile("lu","bye");
+    this.series.chart.setTitle("lu","bye");
   //  this.series.addPoint([0.5, 0.8], true, true);
   //  this.remove();
  //   this.series[0].addPoint([0.5,0.5]);
