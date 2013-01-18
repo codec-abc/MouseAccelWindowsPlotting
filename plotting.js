@@ -10,7 +10,7 @@ function test(e)
 
 function test2()
 {
-    this.x=0.5;
+    this.x=0.8;
     this.y=0.5;
 //    this.values.x=0.5;
 //    this.values.y=0.5;
