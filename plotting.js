@@ -10,7 +10,8 @@ function test(e)
 
 function test2()
 {
-    if (this.series.data.length > 1) this.remove();
+    this.remove();
+    this.series[0].addPoint([0.5,0.5])
 //    this.x=0.5;
  //   this.y=0.5;
 }  
