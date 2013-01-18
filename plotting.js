@@ -10,15 +10,7 @@ function test(e)
 
 function test2()
 {
-    this.x=0.2;
-    this.y=0.2;
-    this.series.chart.setTitle("lu","bye");
-    this.series.chart.redraw();
-  //  this.series.addPoint([0.5, 0.8], true, true);
-  //  this.remove();
- //   this.series[0].addPoint([0.5,0.5]);
-//    this.x=0.5;
- //   this.y=0.5;
+    this.update([0.2, 0.8]);
 }  
 
 $(function () {
@@ -72,10 +64,7 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                           'click': function(e) {
-                                    this.y=0.8;
-                                
-                           }
+                           'click': test2()
                         }
                     }
                 }
