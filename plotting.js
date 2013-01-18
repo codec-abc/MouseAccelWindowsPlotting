@@ -8,12 +8,12 @@ function test(e)
     //    series.addPoint([x, y]);
 }
 
-function test2()
+function test2(e)
 {
   //  if (this.series.data.length > 1) this.remove();
     this.x=0.5;
     this.y=0.5;
-    chart.redraw();
+    e.redraw();
 }  
 
 $(function () {
@@ -65,7 +65,7 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                            'click': test2
+                            'click': test2(chart)
                             
                         }
                     }
