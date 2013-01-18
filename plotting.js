@@ -29,7 +29,7 @@ $(function () {
             xAxis: {
                 minPadding: 0.2,
                 maxPadding: 0.2,
-                maxZoom: 60
+                maxZoom: 2
             },
             yAxis: {
                 title: {
@@ -37,7 +37,7 @@ $(function () {
                 },
                 minPadding: 0.2,
                 maxPadding: 0.2,
-                maxZoom: 60,
+                maxZoom: 2,
                 plotLines: [{
                     value: 0,
                     width: 1,
