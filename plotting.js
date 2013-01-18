@@ -10,8 +10,10 @@ function test(e)
 
 function test2()
 {
-    this.remove();
-    this.series[0].addPoint([0.5,0.5]);
+    this.x=0.5;
+    this.y=0.5f
+  //  this.remove();
+ //   this.series[0].addPoint([0.5,0.5]);
 //    this.x=0.5;
  //   this.y=0.5;
 }  
