@@ -5,25 +5,25 @@ function onChartClick(event)
 
 function onChartLoad(event)
 {
-    var char = this;
-    var serie0 = this.series[0];
-    for (var i = 0; i <serie0.length; i++ )
-    {
-      //  if(serie0.)
-    }
- //   }
-   // var series = this.series[0];
-   //                     setInterval(function() {
-    //                        var x = (new Date()).getTime(), // current time
-   //                             y = Math.random();
-     //                       series.addPoint([x, y], true, true);
-     //                   }, 1000);
 
+}
+
+function onPointSelected()
+{
+    movePoint(this);
+}
+
+function movePoint(e)
+{
+    if(e.selected)
+    {
+        setInterval(movePoint(e),40);
+    }
 }
 
 function onPointClicked()
 {
-    this.update([0.2, 0.8]);
+    //this.update([0.2, 0.8]);
 }  
 
 $(function () {
@@ -79,7 +79,8 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                           'click': onPointClicked
+                           'click': onPointClicked,
+                           'select': onPointSelected
                         }
                     }
                 }
