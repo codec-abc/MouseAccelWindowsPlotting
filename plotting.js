@@ -23,7 +23,7 @@ $(function () {
                 margin: [70, 50, 60, 80],
                 events: {
                 	    click:onChartClick,
-                        load: onChartLoad
+                        load: onChartLoad(event)
                 }
             },
             title: {
