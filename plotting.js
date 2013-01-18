@@ -13,6 +13,7 @@ function test2()
     this.x=0.2;
     this.y=0.2;
     this.series.chart.setTitle("lu","bye");
+    this.series.chart.redraw();
   //  this.series.addPoint([0.5, 0.8], true, true);
   //  this.remove();
  //   this.series[0].addPoint([0.5,0.5]);
@@ -71,7 +72,13 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                            'click': test2
+                           // 'click': test2
+                           'click' : function()
+                                {
+                                        this.x=0.356;
+                                        this.y=0.856;
+                                }
+                           }
                         }
                     }
                 }
