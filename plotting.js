@@ -1,12 +1,17 @@
-function test(e) {
-                        // find the clicked values and the series
-                        var x = e.xAxis[0].value,
-                            y = e.yAxis[0].value,
-                            series = this.series[0];
-        					series
-                        // Add it
-                    //    series.addPoint([x, y]);
-                    }
+function test(e) 
+{
+    // find the clicked values and the series
+    var x = e.xAxis[0].value,    
+    y = e.yAxis[0].value,    
+    series = this.series[0];
+    // Add it
+    //    series.addPoint([x, y]);
+}
+
+function test2()
+{
+    if (this.series.data.length > 1) this.remove();
+}  
 
 $(function () {
     var chart;
@@ -57,9 +62,7 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                            'click': function() {
-                                if (this.series.data.length > 1) this.remove();
-                            }
+                            'click': test2
                         }
                     }
                 }
