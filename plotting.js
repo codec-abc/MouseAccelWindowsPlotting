@@ -10,7 +10,8 @@ function onChartLoad(event)
 
 function onPointSelected()
 {
-    movePoint(this);
+  //  movePoint(this);
+  setInterval(movePoint(e),40);
 }
 
 function movePoint(e)
