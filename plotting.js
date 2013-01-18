@@ -11,7 +11,7 @@ function test(e)
 function test2()
 {
     this.remove();
-    this.series[0].addPoint([0.5,0.5])
+    this.series[0].addPoint([0.5,0.5]);
 //    this.x=0.5;
  //   this.y=0.5;
 }  
@@ -45,6 +45,8 @@ $(function () {
                 title: {
                     text: 'Value'
                 },
+                min:0,
+                max:1,
                 minPadding: 0.2,
                 maxPadding: 0.2,
                 maxZoom: 2,
