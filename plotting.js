@@ -72,12 +72,9 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                           // 'click': test2
-                           'click' : function()
-                                {
-                                        this.x=0.356;
-                                        this.y=0.856;
-                                }
+                           'click': function(e) {
+                                    this.y=0.8;
+                                
                            }
                         }
                     }
