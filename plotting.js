@@ -10,6 +10,7 @@ function test(e)
 
 function test2()
 {
+    var point = this;
     this.update([0.2, 0.8]);
 }  
 
