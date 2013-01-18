@@ -10,8 +10,8 @@ function test(e)
 
 function test2(e)
 {
-    var point = this;
-    this.update([0.2, 0.8]);
+    var point = e;
+    point.update([0.2, 0.8]);
 }  
 
 $(function () {
@@ -65,7 +65,7 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                           'click': test2(e)
+                           'click': test2(this)
                         }
                     }
                 }
