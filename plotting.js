@@ -27,9 +27,11 @@ $(function () {
                 text: 'Click the plot area to add a point. Click a point to remove it.'
             },
             xAxis: {
+                min:0,
                 minPadding: 0.2,
                 maxPadding: 0.2,
-                maxZoom: 2
+                maxZoom: 2,
+                max:1
             },
             yAxis: {
                 title: {
