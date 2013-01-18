@@ -8,7 +8,7 @@ function test(e)
     //    series.addPoint([x, y]);
 }
 
-function test2()
+function test2(e)
 {
     var point = this;
     this.update([0.2, 0.8]);
@@ -65,7 +65,7 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                           'click': test2()
+                           'click': test2(e)
                         }
                     }
                 }
