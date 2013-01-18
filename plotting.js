@@ -1,5 +1,6 @@
-function test(e) 
+function onChartClick(e) 
 {
+    alert("chart clicked");
     // find the clicked values and the series
     var x = e.xAxis[0].value,    
     y = e.yAxis[0].value,    
@@ -8,7 +9,7 @@ function test(e)
     //    series.addPoint([x, y]);
 }
 
-function toto()
+function onPointClicked()
 {
     this.update([0.2, 0.8]);
 }  
@@ -22,7 +23,7 @@ $(function () {
                 type: 'spline',
                 margin: [70, 50, 60, 80],
                 events: {
-                	    click: test
+                	    click: onChartClick
                 }
             },
             title: {
@@ -61,10 +62,11 @@ $(function () {
             },
             plotOptions: {
                 series: {
+                    allowPointSelect : true,
                     lineWidth: 1,
                     point: {
                         events: {
-                           'click': toto
+                           'click': onPointClicked
                         }
                     }
                 }
