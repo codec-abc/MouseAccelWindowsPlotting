@@ -64,7 +64,7 @@ $(function () {
                     lineWidth: 1,
                     point: {
                         events: {
-                            'click': test2()
+                            'click': test2
                             
                         }
                     }
