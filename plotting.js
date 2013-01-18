@@ -1,12 +1,11 @@
-function onChartClick(e) 
+function onChartClick(event) 
 {
-    alert("chart clicked");
-    // find the clicked values and the series
-    var x = e.xAxis[0].value,    
-    y = e.yAxis[0].value,    
-    series = this.series[0];
-    // Add it
-    //    series.addPoint([x, y]);
+    alert ('Chart loaded');
+}
+
+function onChartLoad(e)
+{
+
 }
 
 function onPointClicked()
@@ -23,7 +22,8 @@ $(function () {
                 type: 'spline',
                 margin: [70, 50, 60, 80],
                 events: {
-                	    click: onChartClick
+                	    click:onChartClick,
+                        load: onChartLoad
                 }
             },
             title: {
