@@ -6,6 +6,13 @@ function onChartClick(event)
 function onChartLoad(event)
 {
     alert ('Chart loaded');
+    var series = this.series[0];
+                        setInterval(function() {
+                            var x = (new Date()).getTime(), // current time
+                                y = Math.random();
+                            series.addPoint([x, y], true, true);
+                        }, 1000);
+
 }
 
 function onPointClicked()
