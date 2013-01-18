@@ -6,7 +6,7 @@ function test(e) {
         					series
                         // Add it
                     //    series.addPoint([x, y]);
-    
+    series.
                     }
 
 $(function () {
@@ -64,7 +64,7 @@ $(function () {
                 }
             },
             series: [{
-                data: [[20, 20], [80, 80]]
+                data: [[0, 0], [0.33, 0.33] , [0.66, 0.66] , [1, 1]]
             }]
         });
     });
