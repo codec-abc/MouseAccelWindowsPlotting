@@ -1,11 +1,11 @@
 function onChartClick(event) 
 {
-    alert ('Chart loaded');
+    
 }
 
-function onChartLoad(e)
+function onChartLoad(event)
 {
-
+    alert ('Chart loaded');
 }
 
 function onPointClicked()
