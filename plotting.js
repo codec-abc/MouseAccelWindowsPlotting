@@ -27,7 +27,7 @@ $(function () {
         chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'container',
-                type: 'scatter',
+                type: 'spline',
                 margin: [70, 50, 60, 80],
                 events: {
                 	    click: test

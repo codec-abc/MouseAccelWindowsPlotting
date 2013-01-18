@@ -29,3 +29,4 @@
 {"ts":1358546654736,"patch":[[{"diffs":[[0,"y=0.5;\r\n"],[1,"    this.series.chart.redraw();\r\n"],[0,"  //  th"]],"start1":316,"start2":316,"length1":16,"length2":49}]],"length":2190,"saved":false}
 {"ts":1358546676185,"patch":[[{"diffs":[[0,"   this.y=0.5;\r\n"],[1,"//"],[0,"    this.values."]],"start1":260,"start2":260,"length1":32,"length2":34},{"diffs":[[0,".values.x=0.5;\r\n"],[1,"//"],[0,"    this.values."]],"start1":286,"start2":286,"length1":32,"length2":34}]],"length":2194,"saved":false}
 {"ts":1358546774886,"patch":[[{"diffs":[[0,"   this.x=0."],[-1,"5"],[1,"8"],[0,";\r\n    this."]],"start1":243,"start2":243,"length1":25,"length2":25}]],"length":2194,"saved":false}
+{"ts":1358546803816,"patch":[[{"diffs":[[0,": 's"],[-1,"catter"],[1,"pline"],[0,"',\r\n"]],"start1":662,"start2":662,"length1":14,"length2":13}]],"length":2193,"saved":false}
