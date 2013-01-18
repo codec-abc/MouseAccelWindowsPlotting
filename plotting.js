@@ -10,11 +10,11 @@ function test(e)
 
 function test2()
 {
-    this.x=0.8;
-    this.y=0.5;
+    this.x=0.2;
+    this.y=0.2;
 //    this.values.x=0.5;
 //    this.values.y=0.5;
-    this.series.chart.redraw();
+    this.series.addPoint([0.5, 0.8], true, true);
   //  this.remove();
  //   this.series[0].addPoint([0.5,0.5]);
 //    this.x=0.5;
