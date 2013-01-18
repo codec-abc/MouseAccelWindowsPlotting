@@ -10,8 +10,7 @@ function test(e)
 
 function toto()
 {
-    var point = 3;
-  //  point.update([0.2, 0.8]);
+    this.update([0.2, 0.8]);
 }  
 
 $(function () {
