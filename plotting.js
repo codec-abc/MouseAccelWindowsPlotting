@@ -5,13 +5,19 @@ function onChartClick(event)
 
 function onChartLoad(event)
 {
-    alert ('Chart loaded');
-    var series = this.series[0];
-                        setInterval(function() {
-                            var x = (new Date()).getTime(), // current time
-                                y = Math.random();
-                            series.addPoint([x, y], true, true);
-                        }, 1000);
+    var char = this;
+    var serie0 = this.series[0];
+    for (var i = 0; i <serie0.length; i++ )
+    {
+      //  if(serie0.)
+    }
+ //   }
+   // var series = this.series[0];
+   //                     setInterval(function() {
+    //                        var x = (new Date()).getTime(), // current time
+   //                             y = Math.random();
+     //                       series.addPoint([x, y], true, true);
+     //                   }, 1000);
 
 }
 
