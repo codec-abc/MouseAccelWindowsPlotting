@@ -13,7 +13,6 @@ function test2()
   //  if (this.series.data.length > 1) this.remove();
     this.x=0.5;
     this.y=0.5;
-    this.chart.redraw();
 }  
 
 $(function () {
