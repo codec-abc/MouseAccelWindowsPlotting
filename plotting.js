@@ -16,14 +16,14 @@ function onPointSelected()
 
 function movePoint(e)
 {
-    if(e.selected)
-    {
+  //  if(e.selected)
+   // {
         var chart = e.series.chart;
         var x = chart.xAxis[0].value ;
         var y = chart.yAxis[0].value;
         e.update([x, y]);
         setInterval(movePoint(e),40);
-    }
+  //  }
 }
 
 function onPointClicked()
