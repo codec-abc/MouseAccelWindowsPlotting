@@ -97,3 +97,5 @@
 {"ts":1358558642676,"patch":[[{"diffs":[[0,"raph);\n\n"],[1,"computeFile()\n{\n    alert(\"bouton clique\");\n}"],[0,"\n"]],"start1":240,"start2":240,"length1":9,"length2":54}]],"length":294,"saved":false}
 {"ts":1358558757357,"patch":[[{"diffs":[[1,"function computeFile()\n{\n    alert(\"bouton clique\");\n}\n\n"],[0,"function"]],"start1":0,"start2":0,"length1":8,"length2":64},{"diffs":[[0,");\n\n"],[-1,"computeFile()\n{\n    alert(\"bouton clique\");\n}"],[0,"\n"]],"start1":300,"start2":300,"length1":50,"length2":5}]],"length":305,"saved":false}
 {"ts":1358559095413,"patch":[[{"diffs":[[0,"ique\");\n"],[1,"    var toto = plot1.series[0]._plotdata[0];\n"],[0,"}\n\nfunct"]],"start1":45,"start2":45,"length1":16,"length2":61}]],"length":350,"saved":false}
+{"ts":1358559142019,"patch":[[{"diffs":[[0,"eries[0]"],[1,";//"],[0,"._plotda"]],"start1":75,"start2":75,"length1":16,"length2":19}]],"length":353,"saved":false}
+{"ts":1358559209041,"patch":[[{"diffs":[[0,"eries[0]"],[1,".data[2][2]"],[0,";//._plo"]],"start1":75,"start2":75,"length1":16,"length2":27}]],"length":364,"saved":false}

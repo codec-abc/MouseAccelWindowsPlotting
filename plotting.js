@@ -1,7 +1,7 @@
 function computeFile()
 {
     alert("bouton clique");
-    var toto = plot1.series[0];//._plotdata[0];
+    var toto = plot1.series[0].data[2][2];//._plotdata[0];
 }
 
 function graph() {
