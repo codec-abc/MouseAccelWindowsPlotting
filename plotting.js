@@ -22,7 +22,7 @@ function movePoint(e)
         var x = chart.xAxis[0].value ;
         var y = chart.yAxis[0].value;
         e.update([x, y]);
-        movePoint(e);
+        setInterval(movePoint(e),1000);
   //  }
 }
 
