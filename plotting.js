@@ -1,3 +1,5 @@
+var currentPointSelectioned;
+
 function onChartClick(event) 
 {
     
@@ -11,7 +13,7 @@ function onChartLoad(event)
 function onPointSelected()
 {
   //  movePoint(this);
-  //currentPointSelectioned = this;
+  currentPointSelectioned = this;
 }
 
 function movePoint()
@@ -22,10 +24,10 @@ function movePoint()
      //   var x = chart.xAxis[0].value ;
      //   var y = chart.yAxis[0].value;
      //   e.update([x, y]);
-    // if(currentPointSelectioned.selected)
-    // {
-   //      alert("point selectione");
-  //   }
+     if(currentPointSelectioned.selected)
+     {
+         alert("point selectione");
+     }
   
   //  }
 }
@@ -37,6 +39,7 @@ function onPointClicked()
 
 $(function () {
     var chart;
+
     $(document).ready(function() {
         chart = new Highcharts.Chart({
             chart: {
@@ -99,5 +102,5 @@ $(function () {
             }]
         });
     });
-    
+    setInterval(movePoint(),100);
 });
