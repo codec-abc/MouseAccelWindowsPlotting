@@ -8,9 +8,9 @@ $(document).ready(function () {
      title: 'Highlighting, Dragging, Cursor and Trend Line',
      axes: {
          xaxis: {
-             renderer: $.jqplot.DateAxisRenderer,
+             renderer: $.jqplot.LineRenderer,
              tickOptions: {
-                 formatString: '%#m/%#d/%y'
+                 formatString: '$%.2f'
              },
              numberTicks: 4
          },
