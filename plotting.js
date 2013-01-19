@@ -1,3 +1,8 @@
+function computeFile()
+{
+    alert("bouton clique");
+}
+
 function graph() {
  
   $.jqplot.config.enablePlugins = true;
@@ -14,7 +19,4 @@ function graph() {
 
 $(document).ready(graph);
 
-computeFile()
-{
-    alert("bouton clique");
-}
+
