@@ -14,4 +14,7 @@ function graph() {
 
 $(document).ready(graph);
 
-
+computeFile()
+{
+    alert("bouton clique");
+}
