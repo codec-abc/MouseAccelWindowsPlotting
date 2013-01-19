@@ -1,4 +1,4 @@
-$(document).ready(function () {
+function graph() {
  
   $.jqplot.config.enablePlugins = true;
  
@@ -31,4 +31,10 @@ $(document).ready(function () {
          show: true
      }
   });
-});
+}
+
+
+
+$(document).ready();
+
+
