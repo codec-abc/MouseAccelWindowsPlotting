@@ -26,7 +26,7 @@ function movePoint(e)
      {
          alert("point selectione");
      }
-        setInterval(movePoint(e),1000);
+        
   //  }
 }
 
