@@ -102,5 +102,5 @@ $(function () {
             }]
         });
     });
-    setInterval(movePoint(),100);
+    //setInterval(movePoint(),100);
 });
