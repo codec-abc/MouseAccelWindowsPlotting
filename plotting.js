@@ -11,7 +11,7 @@ function onChartLoad(event)
 function onPointSelected()
 {
   //  movePoint(this);
-  setInterval(movePoint(this),40);
+  setTimeout(movePoint(this),40);
 }
 
 function movePoint(e)
@@ -26,7 +26,7 @@ function movePoint(e)
      {
          alert("point selectione");
      }
-        
+    setTimeout(movePoint(this),40);    
   //  }
 }
 
