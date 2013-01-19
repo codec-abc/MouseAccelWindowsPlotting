@@ -1,106 +1,34 @@
-var currentPointSelectioned;
-
-function onChartClick(event) 
-{
-    
-}
-
-function onChartLoad(event)
-{
-
-}
-
-function onPointSelected()
-{
-  //  movePoint(this);
-  currentPointSelectioned = this;
-}
-
-function movePoint()
-{
-  //  if(e.selected)
-   // {
-     //   var chart = e.series.chart;
-     //   var x = chart.xAxis[0].value ;
-     //   var y = chart.yAxis[0].value;
-     //   e.update([x, y]);
-     if(currentPointSelectioned.selected)
-     {
-         alert("point selectione");
+$(document).ready(function () {
+ 
+  $.jqplot.config.enablePlugins = true;
+ 
+  s1 = [['23-May-08',1],['24-May-08',4],['25-May-08',2],['26-May-08', 6]];
+ 
+  plot1 = $.jqplot('chart1',[s1],{
+     title: 'Highlighting, Dragging, Cursor and Trend Line',
+     axes: {
+         xaxis: {
+             renderer: $.jqplot.DateAxisRenderer,
+             tickOptions: {
+                 formatString: '%#m/%#d/%y'
+             },
+             numberTicks: 4
+         },
+         yaxis: {
+             tickOptions: {
+                 formatString: '$%.2f'
+             }
+         }
+     },
+     highlighter: {
+         sizeAdjust: 10,
+         tooltipLocation: 'n',
+         tooltipAxes: 'y',
+         tooltipFormatString: '<b><i><span style="color:red;">hello</span></i></b> %.2f',
+         useAxesFormatters: false
+     },
+     cursor: {
+         show: true
      }
-  
-  //  }
-}
-
-function onPointClicked()
-{
-    //this.update([0.2, 0.8]);
-}  
-
-$(function () {
-    var chart;
-
-    $(document).ready(function() {
-        chart = new Highcharts.Chart({
-            chart: {
-                renderTo: 'container',
-                type: 'spline',
-                margin: [70, 50, 60, 80],
-                events: {
-                	    click:onChartClick,
-                        load: onChartLoad
-                }
-            },
-            title: {
-                text: 'User supplied data'
-            },
-            subtitle: {
-                text: 'Click the plot area to add a point. Click a point to remove it.'
-            },
-            xAxis: {
-                min:0,
-                minPadding: 0.2,
-                maxPadding: 0.2,
-                maxZoom: 2,
-                max:1
-            },
-            yAxis: {
-                title: {
-                    text: 'Value'
-                },
-                min:0,
-                max:1,
-                minPadding: 0.2,
-                maxPadding: 0.2,
-                maxZoom: 2,
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-            },
-            legend: {
-                enabled: false
-            },
-            exporting: {
-                enabled: false
-            },
-            plotOptions: {
-                series: {
-                    allowPointSelect : true,
-                    lineWidth: 1,
-                    point: {
-                        events: {
-                           'click': onPointClicked,
-                           'select': onPointSelected
-                        }
-                    }
-                }
-            },
-            series: [{
-                data: [[0, 0], [0.33, 0.33] , [0.66, 0.66] , [1, 1]]
-            }]
-        });
-    });
-    //setInterval(movePoint(),100);
+  });
 });
