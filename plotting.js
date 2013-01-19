@@ -35,6 +35,6 @@ function graph() {
 
 
 
-$(document).ready();
+$(document).ready(graph);
 
 
