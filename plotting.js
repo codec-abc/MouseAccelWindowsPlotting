@@ -46,6 +46,14 @@ function graph()
   s1 = [[0.25,0.25],[0.5,0.5],[0.75, 0.75],[1, 1]];
   plot1 = $.jqplot('chart1',[s1],{
      title: 'Move points around to draw your mouse profile',
+      axes:{
+          xaxis:{
+          label:'Mouse Velocity'
+        },
+        yaxis:{
+          label:'Pointer Velocity'
+        }
+      }
 
   });
   $( "#slider" ).slider({ max: 65535 },{ min: 1 });
