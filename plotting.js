@@ -81,8 +81,7 @@ function transformNumberTo16_16hexa(decimalNumberIn)
   //  var maxValue = 65536.9999847412109375;
     var currentValue = decimalNumberIn;
     var wholePart = Math.floor(currentValue);
-    var decimalPart = currentValue - wholePart;
+    var decimalPart = (currentValue - wholePart)*10000;
     var hexStringWholePart = wholePart.toString(16);
     var hexStringDecimalPart = decimalPart.toString(16);
-    hexStringDecimalPart = hexStringDecimalPart*10000;
 }
