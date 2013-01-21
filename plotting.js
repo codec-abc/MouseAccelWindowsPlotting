@@ -18,6 +18,7 @@ function computeFile()
         string = string +   "00,00,03,00,00,00,00,00,\\\n";
         string = string +   "00,00,04,00,00,00,00,00\n";
         
+        window.open("data:text/json;charset=utf-8," + escape(string));
         
     }
     else
