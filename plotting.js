@@ -61,6 +61,7 @@ function graph()
             fontFamily: 'Georgia, Serif',
             fontSize: '12pt'
           },
+          tickInterval : 0.25,
           numberTicks : 5,
         },
         yaxis:{
@@ -70,6 +71,7 @@ function graph()
             fontFamily: 'Georgia, Serif',
             fontSize: '12pt'
           },
+          tickInterval : 0.25,
           numberTicks : 5,
         }
       }
