@@ -2,7 +2,7 @@ function computeFile()
 {
     if(validData())
     {
-    
+        $('#myModal').modal('show');
     }
     else
     {
