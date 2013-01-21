@@ -4,14 +4,14 @@ function computeFile()
     {
         var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
         string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
-        for(var i=0; i<3 && keep; i++)
+        for(var i=0; i<3; i++)
         {
             string = string + transform16_16hexaToWindowsRegristryNotation(transformNumberTo16_16hexa(plot1.series[0].data[i][0])[0],transformNumberTo16_16hexa(plot1.series[0].data[i][0])[1]);
             string = string + "\n";
         }
         string = string + "\n";
         string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
-        for(var i=0; i<3 && keep; i++)
+        for(var i=0; i<3; i++)
         {
             string = string + transform16_16hexaToWindowsRegristryNotation(transformNumberTo16_16hexa(plot1.series[0].data[i][1])[0],transformNumberTo16_16hexa(plot1.series[0].data[i][1])[1]);
             string = string + "\n";
