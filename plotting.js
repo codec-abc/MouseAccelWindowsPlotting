@@ -123,13 +123,13 @@ function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
     for (var i=0;i<2;i++)
     {
         string = decimalPartIn.substring(i*2,i*2+2) + string;
-        string = string + ",";
+        string = "," + string;
     }
     
     for (var i=0;i<2;i++)
     {
         string = wholePartIn.substring(i*2,i*2+2) + string;
-        string = string + ",";
+        string = "," + string;
     }
     string = string.substring(0,string.length-1);
     return string;
