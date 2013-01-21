@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Mouseaccelwindowsplotting : " />
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/gh-pages/js/bootstrap.js"></script>
+        <link href="https://github.com/codec-abc/MouseAccelWindowsPlotting/blob/gh-pages/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+        <title>Mouseaccelwindowsplotting</title>
+    </head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Mouseaccelwindowsplotting : " />
+    <body>
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Error</h3>
+            </div>
+            <div class="modal-body">
+                <p>Points are not Valid!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/gh-pages/js/bootstrap.js"></script>
-    <link href="https://github.com/codec-abc/MouseAccelWindowsPlotting/blob/gh-pages/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <title>Mouseaccelwindowsplotting</title>
-  </head>
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+                <a id="forkme_banner" href="https://github.com/codec-abc/MouseAccelWindowsPlotting">View on GitHub</a>
 
-  <body>
-  
-  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Error</h3>
-  </div>
-  <div class="modal-body">
-    <p>Points are not Valid!</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
-</div>
+                <h1 id="project_title">Mouseaccelwindowsplotting</h1>
+                <h2 id="project_tagline"></h2>
 
-
-    <!-- HEADER
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/codec-abc/MouseAccelWindowsPlotting">View on GitHub</a>
-
-          <h1 id="project_title">Mouseaccelwindowsplotting</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/codec-abc/MouseAccelWindowsPlotting/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/codec-abc/MouseAccelWindowsPlotting/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-     -->
-     
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-
-
-<h3>Designer Templates</h3>
-<div class="example-plot" id="chart1">  
-    <!--
-    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/jquery.jqplot.min.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/examples/syntaxhighlighter/scripts/shCore.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/examples/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/examples/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
--->
-<!-- End Don't touch this! -->
-
-<!-- Additional plugins go here -->
-<!--
-    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/jquery.min.js"></script>
-    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/jquery.jqplot.min.js"></script>
-    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/plugins/jqplot.cursor.min.js"></script>
-    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/plugins/jqplot.highlighter.min.js"></script>
-    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/plugins/jqplot.dragable.min.js"></script>
--->
-
-    <script src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/plotting.js"></script> 
-</div>
-<button type="button" class="btn btn-primary" onclick="computeFile();" >Get File!</button>
-
-
-    
-
-  </body>
+                <section id="downloads">
+                    <a class="zip_download_link" href="https://github.com/codec-abc/MouseAccelWindowsPlotting/zipball/master">Download this project as a .zip file</a>
+                    <a class="tar_download_link" href="https://github.com/codec-abc/MouseAccelWindowsPlotting/tarball/master">Download this project as a tar.gz file</a>
+                </section>
+            </header>
+        </div>
+        
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <div class="example-plot" id="chart1">
+                    
+                    <!--
+                    <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/jquery.jqplot.min.js"></script>
+                    <script type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/examples/syntaxhighlighter/scripts/shCore.js"></script>
+                    <script type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/examples/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
+                    <script type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/examples/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+                    -->
+                        
+                        
+                    <!--
+                        <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/jquery.min.js"></script>
+                        <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/jquery.jqplot.min.js"></script>
+                        <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/plugins/jqplot.cursor.min.js"></script>
+                        <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/plugins/jqplot.highlighter.min.js"></script>
+                        <script class="include" type="text/javascript" src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/dist/plugins/jqplot.dragable.min.js"></script>
+                    -->
+                    <script src="https://raw.github.com/codec-abc/MouseAccelWindowsPlotting/master/plotting.js"></script> 
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="computeFile();" >Get File!</button>
+    </body>
 </html>
