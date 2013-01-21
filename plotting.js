@@ -2,9 +2,22 @@ function computeFile()
 {
     if(validData())
     {
-        
         var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
         string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
+        for(var i=0; i<3 && keep; i++)
+        {
+            string = string + transform16_16hexaToWindowsRegristryNotation(transformNumberTo16_16hexa(plot1.series[0].data[i][0])[0],transformNumberTo16_16hexa(plot1.series[0].data[i][0])[1]);
+            string = string + "\n";
+        }
+        string = string + "\n";
+        string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
+        for(var i=0; i<3 && keep; i++)
+        {
+            string = string + transform16_16hexaToWindowsRegristryNotation(transformNumberTo16_16hexa(plot1.series[0].data[i][1])[0],transformNumberTo16_16hexa(plot1.series[0].data[i][1])[1]);
+            string = string + "\n";
+        }
+        string = string + "\n";
+        /*
         string = string +   "00,00,00,00,00,00,00,00,\\\n";
         string = string +   "00,00,01,00,00,00,00,00,\\\n";
         string = string +   "00,00,02,00,00,00,00,00,\\\n";
@@ -18,7 +31,7 @@ function computeFile()
         string = string +   "00,00,02,00,00,00,00,00,\\\n";
         string = string +   "00,00,03,00,00,00,00,00,\\\n";
         string = string +   "00,00,04,00,00,00,00,00\n";
-        
+        */
         window.open("data:text/octet-stream;charset=utf-8," + escape(string));
 
         
@@ -94,11 +107,25 @@ function transformNumberTo16_16hexa(decimalNumberIn)
     {
         hexStringDecimalPart = "0"+hexStringDecimalPart;
     }
-    hexStringDecimalPart= hexStringDecimalPart.toUpperCase();
+    
+    hexStringDecimalPart = hexStringDecimalPart.toUpperCase();
     hexStringWholePart = hexStringWholePart.toUpperCase();
+    return [hexStringWholePart, hexStringDecimalPart]; 
 }
 
 function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
 {
+    var string ="";
+    for (var i=0;i<2;i++)
+    {
+        string = string + decimalPartIn.substring(i*2,i*2+2);
+        string = string + ",";
+    }
     
+    for (var i=0;i<2;i++)
+    {
+        string = string + wholePartIn.substring(i*2,i*2+2);
+        string = string + ",";
+    }
+    string = string.substring(0,string.length-1);
 }
