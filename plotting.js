@@ -1,14 +1,15 @@
 function computeFile()
 {
-    if(validData())
-    {
-        $('#myModal').modal('show');
-    }
-    else
-    {
+    $('#myModal').modal('show');
+  //  if(validData())
+ //   {
+ //       $('#myModal').modal('show');
+  //  }
+  //  else
+  //  {
        // alert("Points positions are not valid");
-        $('#myModal').modal('show');
-    }
+ //       $('#myModal').modal('show');
+ //   }
 }
 
 function graph() 
