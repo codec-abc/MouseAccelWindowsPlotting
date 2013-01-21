@@ -134,5 +134,6 @@ function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
     }
     
     string = string.substring(1,string.length);
+    string = string + ",00,00,00,00";
     return string;
 }
