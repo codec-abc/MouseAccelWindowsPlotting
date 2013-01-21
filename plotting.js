@@ -2,6 +2,7 @@ function computeFile()
 {
     if(validData())
     {
+        
         var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
         string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
         string = string +   "00,00,00,00,00,00,00,00,\\\n";
@@ -73,4 +74,14 @@ function validData()
         }
     }
     return keep;
+}
+
+function transformNumberTo16_16hexa(decimalNumberIn)
+{
+    var maxValue = 65536.9999847412109375;
+    var currentValue = decimalNumberIn * maxValue;
+    var wholePart = Math.floor(currentValue);
+    var decimalPart = currentValue - wholePart;
+    var hexStringWholePart = wholePart.toString(16);
+    var hexStringDecimalPart = decimalPart.toString(16);
 }
