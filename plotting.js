@@ -58,8 +58,8 @@ function graph()
      title: 'Move points around to draw your mouse profile',
 
   });
-  $( "#slider" ).slider();
-  $( "#slider2" ).slider();
+  $( "#slider" ).slider({ max: 65535 },{ min: 1 });
+  $( "#slider2" ).slider({ max: 65535 },{ min: 1 });
 
 }
 
