@@ -18,17 +18,8 @@ function computeFile()
         string = string +   "00,00,03,00,00,00,00,00,\\\n";
         string = string +   "00,00,04,00,00,00,00,00\n";
         
-       // window.open("data:text/octet-stream;charset=utf-8," + escape(string));
-        
-    window.URL = window.webkitURL || window.URL;
-    window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder || window.MozBlobBuilder;
-    file = new WebKitBlobBuilder();
-    file.append(output); 
-    var a = document.getElementById("downloadFile");
-    a.hidden = '';
-    a.href = window.URL.createObjectURL(file.getBlob('text/plain'));
-    a.download = 'filename.txt';
-    a.textContent = 'Download file!';
+        window.open("data:text/octet-stream;charset=utf-8," + escape(string));
+
         
     }
     else
