@@ -15,7 +15,7 @@ function computeFile()
         string = string + "\n";
         string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
         string = string + "00,00,00,00,00,00,00,00,\\\n";
-        for(var i=0; i<3; i++)
+        for(var i=0; i<4; i++)
         {
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][1]);
             var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
