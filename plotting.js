@@ -7,6 +7,7 @@ function computeFile()
     else
     {
         alert("Points positions are not valid");
+        $('#myModal').modal('show');
     }
 }
 
@@ -24,7 +25,6 @@ $(document).ready(graph);
 
 function validData()
 {
-
     var keep = true;
     for(var i=0; i<3 && keep; i++)
     {
@@ -54,7 +54,6 @@ function validData()
         {
             keep=false
         }
-        
     }
     return keep;
 }
