@@ -9,8 +9,9 @@ function computeFile()
         string = string + "00,00,00,00,00,00,00,00,\\\n";
         for(var i=0; i<4; i++)
         {
-            var values = transformNumberTo16_16hexa(plot1.series[0].data[i][0]);
-            var output = transform16_16hexaToWindowsRegristryNotation(values[0]*xScale,values[1]*xScale);
+            var graphValue = plot1.series[0].data[i][0]*xScale;
+            var values = transformNumberTo16_16hexa(graphValue);
+            var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
             string = string + output;
             string = string + ",\\\n";
         }
@@ -20,8 +21,9 @@ function computeFile()
         string = string + "00,00,00,00,00,00,00,00,\\\n";
         for(var i=0; i<4; i++)
         {
-            var values = transformNumberTo16_16hexa(plot1.series[0].data[i][1]);
-            var output = transform16_16hexaToWindowsRegristryNotation(values[0]*yScale,values[1]*yScale);
+            var graphValue = plot1.series[0].data[i][1]*yScale;
+            var values = transformNumberTo16_16hexa(graphValue);
+            var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
             string = string + output;
             string = string + ",\\\n";
         }
