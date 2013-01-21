@@ -11,9 +11,9 @@ function computeFile()
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][0]);
             var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
             string = string + output;
-            string = string + "\\\n";
+            string = string + "\\,\n";
         }
-        string = string.substring(0,string.length-2);
+        string = string.substring(0,string.length-3);
         string = string + "\n\n";
         string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
         string = string + "00,00,00,00,00,00,00,00,\\\n";
@@ -22,9 +22,9 @@ function computeFile()
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][1]);
             var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
             string = string + output;
-            string = string + "\\\n";
+            string = string + "\\,\n";
         }
-        string = string.substring(0,string.length-2);
+        string = string.substring(0,string.length-3);
         string = string + "\n\n";
         /*
         string = string +   "00,00,00,00,00,00,00,00,\\\n";
