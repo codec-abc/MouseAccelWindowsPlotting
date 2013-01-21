@@ -165,3 +165,4 @@
 {"ts":1358801782891,"patch":[[{"diffs":[[0,"ve\\\"=hex:\\\\\\n\";\n"],[1,"        string = string + \"00,00,00,00,00,00,00,00,\\\\\\n\";\n"],[0,"        for(var "]],"start1":203,"start2":203,"length1":32,"length2":90}]],"length":4055,"saved":false}
 {"ts":1358801790079,"patch":[[{"diffs":[[0,"ve\\\"=hex:\\\\\\n\";\n"],[1,"        string = string + \"00,00,00,00,00,00,00,00,\\\\\\n\";\n"],[0,"        for(var "]],"start1":651,"start2":651,"length1":32,"length2":90}]],"length":4113,"saved":false}
 {"ts":1358801807765,"patch":[[{"diffs":[[0," i=0; i<"],[-1,"3"],[1,"4"],[0,"; i++)\n "]],"start1":740,"start2":740,"length1":17,"length2":17}]],"length":4113,"saved":false}
+{"ts":1358802341196,"patch":[[{"diffs":[[0,"uteFile()\n{\n"],[1,"    alert(\"salut toto\");\n"],[0,"    if(valid"]],"start1":13,"start2":13,"length1":24,"length2":49}]],"length":4138,"saved":false}
