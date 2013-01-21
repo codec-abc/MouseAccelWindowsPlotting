@@ -2,6 +2,22 @@ function computeFile()
 {
     if(validData())
     {
+        var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
+        string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
+        string = string +   "00,00,00,00,00,00,00,00,\\\n";
+        string = string +   "00,00,01,00,00,00,00,00,\\\n";
+        string = string +   "00,00,02,00,00,00,00,00,\\\n";
+        string = string +   "00,00,03,00,00,00,00,00,\\\n";
+        string = string +   "00,00,04,00,00,00,00,00\n";
+        
+        
+        string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
+        string = string +   "00,00,00,00,00,00,00,00,\\\n";
+        string = string +   "00,00,01,00,00,00,00,00,\\\n";
+        string = string +   "00,00,02,00,00,00,00,00,\\\n";
+        string = string +   "00,00,03,00,00,00,00,00,\\\n";
+        string = string +   "00,00,04,00,00,00,00,00\n";
+        
         
     }
     else
