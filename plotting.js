@@ -62,7 +62,6 @@ function graph()
             fontSize: '12pt'
           },
           tickInterval : 0.25,
-          numberTicks : 5,
         },
         yaxis:{
           label:'Pointer Velocity',
@@ -72,7 +71,6 @@ function graph()
             fontSize: '12pt'
           },
           tickInterval : 0.25,
-          numberTicks : 5,
         }
       }
 
