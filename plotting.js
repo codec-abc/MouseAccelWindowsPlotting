@@ -131,6 +131,6 @@ function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
         string = wholePartIn.substring(i*2,i*2+2) + string;
         string = "," + string;
     }
-    string = string.substring(0,string.length-1);
+    string = string.substring(1,string.length);
     return string;
 }
