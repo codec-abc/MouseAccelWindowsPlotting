@@ -46,7 +46,11 @@ function graph()
   s1 = [[0.25,0.25],[0.5,0.5],[0.75, 0.75],[1, 1]];
   plot1 = $.jqplot('chart1',[s1],{
       axesDefaults: {
-        tickRenderer: $.jqplot.CanvasAxisTickRenderer
+        tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+        tickOptions: {
+            fontFamily: 'Georgia, Serif',
+            fontSize: '12pt'
+        }
       },
       title: 'Move points around to draw your mouse profile',
       axes:{
