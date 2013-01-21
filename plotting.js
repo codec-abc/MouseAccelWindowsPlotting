@@ -60,7 +60,9 @@ function graph()
           labelOptions: {
             fontFamily: 'Georgia, Serif',
             fontSize: '12pt'
-          }
+          },
+          min:0,
+          max:1
         },
         yaxis:{
           label:'Pointer Velocity',
@@ -68,7 +70,9 @@ function graph()
           labelOptions: {
             fontFamily: 'Georgia, Serif',
             fontSize: '12pt'
-          }
+          },
+          min:0,
+          max:1
         }
       }
 
