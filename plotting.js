@@ -120,17 +120,19 @@ function transformNumberTo16_16hexa(decimalNumberIn)
 function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
 {
     var string ="";
-    for (var i=0;i<2;i++)
-    {
-        string = decimalPartIn.substring(i*2,i*2+2) + string;
-        string = "," + string;
-    }
     
     for (var i=0;i<2;i++)
     {
         string = wholePartIn.substring(i*2,i*2+2) + string;
         string = "," + string;
     }
+    
+    for (var i=0;i<2;i++)
+    {
+        string = decimalPartIn.substring(i*2,i*2+2) + string;
+        string = "," + string;
+    }
+    
     string = string.substring(1,string.length);
     return string;
 }
