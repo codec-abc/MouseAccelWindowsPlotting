@@ -1,6 +1,5 @@
 function computeFile()
 {
-    alert("salut toto");
     if(validData())
     {
         var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
