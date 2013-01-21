@@ -31,7 +31,7 @@ function computeFile()
 function graph() 
 {
   $.jqplot.config.enablePlugins = true;
-  s1 = [[0,0],[0.33,0.33],[0.66, 0.66],[1, 1]];
+  s1 = [[0.25,0.25],[0.5,0.5],[0.75, 0.75],[1, 1]];
   plot1 = $.jqplot('chart1',[s1],{
      title: 'Move points around to draw your mouse profile',
 
