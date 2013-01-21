@@ -94,8 +94,8 @@ function transformNumberTo16_16hexa(decimalNumberIn)
     {
         hexStringDecimalPart = "0"+hexStringDecimalPart;
     }
-    hexStringDecimalPart.toUpperCase();
-    hexStringWholePart.toUpperCase();
+    hexStringDecimalPart= hexStringDecimalPart.toUpperCase();
+    hexStringWholePart = hexStringWholePart.toUpperCase();
 }
 
 function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
