@@ -29,21 +29,7 @@ function computeFile()
         }
         string = string.substring(0,string.length-3);
         string = string + "\n\n";
-        /*
-        string = string +   "00,00,00,00,00,00,00,00,\\\n";
-        string = string +   "00,00,01,00,00,00,00,00,\\\n";
-        string = string +   "00,00,02,00,00,00,00,00,\\\n";
-        string = string +   "00,00,03,00,00,00,00,00,\\\n";
-        string = string +   "00,00,04,00,00,00,00,00\n";
-        
-        
-        string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
-        string = string +   "00,00,00,00,00,00,00,00,\\\n";
-        string = string +   "00,00,01,00,00,00,00,00,\\\n";
-        string = string +   "00,00,02,00,00,00,00,00,\\\n";
-        string = string +   "00,00,03,00,00,00,00,00,\\\n";
-        string = string +   "00,00,04,00,00,00,00,00\n";
-        */
+
         window.open("data:text/octet-stream;charset=utf-8," + escape(string));
 
         
