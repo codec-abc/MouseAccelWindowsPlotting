@@ -7,7 +7,8 @@ function computeFile()
         for(var i=0; i<3; i++)
         {
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][0]);
-            string = string + transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
+            var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
+            string = string + output;
             string = string + "\n";
         }
         string = string + "\n";
@@ -15,7 +16,8 @@ function computeFile()
         for(var i=0; i<3; i++)
         {
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][1]);
-            string = string + transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
+            var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
+            string = string + output;
             string = string + "\n";
         }
         string = string + "\n";
