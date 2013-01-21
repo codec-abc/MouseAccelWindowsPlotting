@@ -3,7 +3,7 @@ function computeFile()
     if(validData())
     {
         var xScale = $("#slider").slider("value");
-        var yScale = $("#slider").slider("value");
+        var yScale = $("#slider2").slider("value");
         var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
         string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
         string = string + "00,00,00,00,00,00,00,00,\\\n";
