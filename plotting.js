@@ -84,4 +84,5 @@ function transformNumberTo16_16hexa(decimalNumberIn)
     var decimalPart = currentValue - wholePart;
     var hexStringWholePart = wholePart.toString(16);
     var hexStringDecimalPart = decimalPart.toString(16);
+    hexStringDecimalPart = hexStringDecimalPart*1000;
 }
