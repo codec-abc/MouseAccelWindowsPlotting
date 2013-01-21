@@ -141,3 +141,4 @@
 {"ts":1358784808133,"patch":[[{"diffs":[[0,"perCase();\n}"],[1,"\n\nfunction transform16_16hexaToWindowRegristryNotation(wholePartIn,decimalPartIn)\n{\n    \n}"]],"start1":2660,"start2":2660,"length1":12,"length2":102}]],"length":2762,"saved":false}
 {"ts":1358784828039,"patch":[[{"diffs":[[0,"ToWindow"],[1,"s"],[0,"Regristr"]],"start1":2701,"start2":2701,"length1":16,"length2":17}]],"length":2763,"saved":false}
 {"ts":1358792058636,"patch":[[{"diffs":[[0," i=0; i<"],[-1,"3"],[1,"4"],[0," && keep"]],"start1":1365,"start2":1365,"length1":17,"length2":17}]],"length":2763,"saved":false}
+{"ts":1358792129648,"patch":[[{"diffs":[[0," i=0; i<"],[-1,"4"],[1,"3"],[0," && keep"]],"start1":1365,"start2":1365,"length1":17,"length2":17}]],"length":2763,"saved":false}

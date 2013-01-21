@@ -44,7 +44,7 @@ $(document).ready(graph);
 function validData()
 {
     var keep = true;
-    for(var i=0; i<4 && keep; i++)
+    for(var i=0; i<3 && keep; i++)
     {
         var x = plot1.series[0].data[i][0];
         var y = plot1.series[0].data[i][0];
