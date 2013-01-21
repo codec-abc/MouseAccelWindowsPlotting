@@ -2,13 +2,15 @@ function computeFile()
 {
     if(validData())
     {
+        var xScale = $("#slider").slider("value");
+        var yScale = $("#slider").slider("value");
         var string = "Windows Registry Editor Version 5.00\n\n[HKEY_CURRENT_USER\\Control Panel\\Mouse]\n";
         string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
         string = string + "00,00,00,00,00,00,00,00,\\\n";
         for(var i=0; i<4; i++)
         {
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][0]);
-            var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
+            var output = transform16_16hexaToWindowsRegristryNotation(values[0]*xScale,values[1]*xScale);
             string = string + output;
             string = string + ",\\\n";
         }
@@ -19,7 +21,7 @@ function computeFile()
         for(var i=0; i<4; i++)
         {
             var values = transformNumberTo16_16hexa(plot1.series[0].data[i][1]);
-            var output = transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
+            var output = transform16_16hexaToWindowsRegristryNotation(values[0]*yScale,values[1]*yScale);
             string = string + output;
             string = string + ",\\\n";
         }
