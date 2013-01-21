@@ -48,10 +48,20 @@ function graph()
      title: 'Move points around to draw your mouse profile',
       axes:{
           xaxis:{
-          label:'Mouse Velocity'
+          label:'Mouse Velocity',
+          labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+          labelOptions: {
+            fontFamily: 'Georgia, Serif',
+            fontSize: '12pt'
+          }
         },
         yaxis:{
-          label:'Pointer Velocity'
+          label:'Pointer Velocity',
+          labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+          labelOptions: {
+            fontFamily: 'Georgia, Serif',
+            fontSize: '12pt'
+          }
         }
       }
 
