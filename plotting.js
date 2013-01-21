@@ -62,7 +62,7 @@ function graph()
             fontSize: '12pt'
           },
           min:-0.05,
-          max:1.25,
+          max:1.5,
           ticks : [0,0.25,0.5,0.75,1]
         },
         yaxis:{
@@ -73,7 +73,7 @@ function graph()
             fontSize: '12pt'
           },
           min:-0.05,
-          max:1.25,
+          max:1.5,
           ticks : [0,0.25,0.5,0.75,1]
         }
       }
