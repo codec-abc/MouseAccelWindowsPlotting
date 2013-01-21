@@ -63,7 +63,7 @@ function graph()
           },
           min:-0.05,
           max:1.5,
-          ticks : [0,0.25,0.5,0.75,1]
+          ticks : [0,0.25,0.5,0.75,1.25]
         },
         yaxis:{
           label:'Pointer Velocity',
@@ -74,7 +74,7 @@ function graph()
           },
           min:-0.05,
           max:1.5,
-          ticks : [0,0.25,0.5,0.75,1]
+          ticks : [0,0.25,0.5,0.75,1.25]
         }
       }
 
