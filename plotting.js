@@ -93,4 +93,6 @@ function transformNumberTo16_16hexa(decimalNumberIn)
     {
         hexStringDecimalPart = "0"+hexStringDecimalPart;
     }
+    hexStringDecimalPart.toUpperCase();
+    hexStringWholePart.toUpperCase();
 }
