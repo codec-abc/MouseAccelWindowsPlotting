@@ -6,14 +6,16 @@ function computeFile()
         string = string + "\"SmoothMouseXCurve\"=hex:\\\n";
         for(var i=0; i<3; i++)
         {
-            string = string + transform16_16hexaToWindowsRegristryNotation(transformNumberTo16_16hexa(plot1.series[0].data[i][0])[0],transformNumberTo16_16hexa(plot1.series[0].data[i][0])[1]);
+            var values = transformNumberTo16_16hexa(plot1.series[0].data[i][0]);
+            string = string + transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
             string = string + "\n";
         }
         string = string + "\n";
         string = string + "\"SmoothMouseYCurve\"=hex:\\\n";
         for(var i=0; i<3; i++)
         {
-            string = string + transform16_16hexaToWindowsRegristryNotation(transformNumberTo16_16hexa(plot1.series[0].data[i][1])[0],transformNumberTo16_16hexa(plot1.series[0].data[i][1])[1]);
+            var values = transformNumberTo16_16hexa(plot1.series[0].data[i][1]);
+            string = string + transform16_16hexaToWindowsRegristryNotation(values[0],values[1]);
             string = string + "\n";
         }
         string = string + "\n";
