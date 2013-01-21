@@ -6,7 +6,7 @@ function computeFile()
     }
     else
     {
-        alert("Points positions are not valid");
+       // alert("Points positions are not valid");
         $('#myModal').modal('show');
     }
 }
