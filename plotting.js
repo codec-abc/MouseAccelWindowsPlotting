@@ -132,4 +132,5 @@ function transform16_16hexaToWindowsRegristryNotation(wholePartIn,decimalPartIn)
         string = string + ",";
     }
     string = string.substring(0,string.length-1);
+    return string;
 }
